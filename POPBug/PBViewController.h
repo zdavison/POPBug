@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBCrowdView.h"
 
 @interface PBViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet DBCrowdView *crowdView;
 
 @end

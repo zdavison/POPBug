@@ -14,16 +14,12 @@
 
 @implementation PBViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+-(IBAction)plusButtonPressed:(id)sender{
+  self.crowdView.value++;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)minusButtonPressed:(id)sender{
+  self.crowdView.value--;
 }
 
 @end

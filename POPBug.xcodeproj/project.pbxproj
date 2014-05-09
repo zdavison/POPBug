@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06567C3CD98C42CFBB2FF580 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74087CE313004487AF3AB56C /* libPods.a */; };
 		87AFE77C191CF40F002976FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AFE77B191CF40F002976FB /* Foundation.framework */; };
 		87AFE77E191CF40F002976FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AFE77D191CF40F002976FB /* CoreGraphics.framework */; };
 		87AFE780191CF40F002976FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AFE77F191CF40F002976FB /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		87AFE79D191CF40F002976FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AFE77F191CF40F002976FB /* UIKit.framework */; };
 		87AFE7A5191CF40F002976FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87AFE7A3191CF40F002976FB /* InfoPlist.strings */; };
 		87AFE7A7191CF40F002976FB /* POPBugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AFE7A6191CF40F002976FB /* POPBugTests.m */; };
+		87AFE7B2191CF423002976FB /* DBCrowdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AFE7B1191CF423002976FB /* DBCrowdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74087CE313004487AF3AB56C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AFE778191CF40F002976FB /* POPBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POPBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AFE77B191CF40F002976FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		87AFE77D191CF40F002976FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +56,9 @@
 		87AFE7A2191CF40F002976FB /* POPBugTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "POPBugTests-Info.plist"; sourceTree = "<group>"; };
 		87AFE7A4191CF40F002976FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		87AFE7A6191CF40F002976FB /* POPBugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POPBugTests.m; sourceTree = "<group>"; };
+		87AFE7B0191CF423002976FB /* DBCrowdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCrowdView.h; sourceTree = "<group>"; };
+		87AFE7B1191CF423002976FB /* DBCrowdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCrowdView.m; sourceTree = "<group>"; };
+		B4B902E891EA44B3905CF0E4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 				87AFE77E191CF40F002976FB /* CoreGraphics.framework in Frameworks */,
 				87AFE780191CF40F002976FB /* UIKit.framework in Frameworks */,
 				87AFE77C191CF40F002976FB /* Foundation.framework in Frameworks */,
+				06567C3CD98C42CFBB2FF580 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,7 @@
 				87AFE7A0191CF40F002976FB /* POPBugTests */,
 				87AFE77A191CF40F002976FB /* Frameworks */,
 				87AFE779191CF40F002976FB /* Products */,
+				B4B902E891EA44B3905CF0E4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +113,7 @@
 				87AFE77D191CF40F002976FB /* CoreGraphics.framework */,
 				87AFE77F191CF40F002976FB /* UIKit.framework */,
 				87AFE79A191CF40F002976FB /* XCTest.framework */,
+				74087CE313004487AF3AB56C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +126,8 @@
 				87AFE78D191CF40F002976FB /* Main.storyboard */,
 				87AFE790191CF40F002976FB /* PBViewController.h */,
 				87AFE791191CF40F002976FB /* PBViewController.m */,
+				87AFE7B0191CF423002976FB /* DBCrowdView.h */,
+				87AFE7B1191CF423002976FB /* DBCrowdView.m */,
 				87AFE793191CF40F002976FB /* Images.xcassets */,
 				87AFE782191CF40F002976FB /* Supporting Files */,
 			);
@@ -159,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87AFE7AA191CF40F002976FB /* Build configuration list for PBXNativeTarget "POPBug" */;
 			buildPhases = (
+				D7FB504BBF9242ED8294A194 /* Check Pods Manifest.lock */,
 				87AFE774191CF40F002976FB /* Sources */,
 				87AFE775191CF40F002976FB /* Frameworks */,
 				87AFE776191CF40F002976FB /* Resources */,
+				FDD816BF39F84A4AB5DD634A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,11 +258,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D7FB504BBF9242ED8294A194 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD816BF39F84A4AB5DD634A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87AFE774191CF40F002976FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AFE7B2191CF423002976FB /* DBCrowdView.m in Sources */,
 				87AFE78C191CF40F002976FB /* PBAppDelegate.m in Sources */,
 				87AFE792191CF40F002976FB /* PBViewController.m in Sources */,
 				87AFE788191CF40F002976FB /* main.m in Sources */,
@@ -376,12 +423,14 @@
 		};
 		87AFE7AB191CF40F002976FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B902E891EA44B3905CF0E4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "POPBug/POPBug-Prefix.pch";
 				INFOPLIST_FILE = "POPBug/POPBug-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,12 +438,14 @@
 		};
 		87AFE7AC191CF40F002976FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B902E891EA44B3905CF0E4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "POPBug/POPBug-Prefix.pch";
 				INFOPLIST_FILE = "POPBug/POPBug-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -459,6 +510,7 @@
 				87AFE7AC191CF40F002976FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87AFE7AD191CF40F002976FB /* Build configuration list for PBXNativeTarget "POPBugTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +519,7 @@
 				87AFE7AF191CF40F002976FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
